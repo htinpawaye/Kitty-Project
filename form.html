@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Design</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: rgb(247, 184, 233);
+        }
+        
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        
+        header {
+            background-image: url(images/background.jpg);
+            background-size: cover;
+            height: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 50px;
+            color: blueviolet;
+            margin: 10px;
+        }
+        
+        aside img {
+            float: left;
+            height: 500px;
+            width: auto;
+        }
+        
+        article {
+            height: 500px;
+            margin-left: 400px;
+        }
+        
+        article img {
+            height: 500px;
+        }
+        
+        article p {
+            line-height: 1.5;
+            font-size: 17px;
+        }
+        
+        section {
+            border: 2px solid blueviolet;
+            /* margin: 20px; */
+            padding: 20px;
+        }
+        
+        section .form1,
+        h1 {
+            text-align: center;
+        }
+        
+        .second {
+            width: 500px;
+            margin-left: 400px;
+        }
+        
+        section .submit {
+            border: none;
+            border: 1px solid blueviolet;
+            border-radius: 20px;
+        }
+        
+        footer {
+            background-color: rgb(238, 154, 182);
+            text-align: center;
+            color: blueviolet;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="#form">Form</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+    <header>
+
+        <img src="images/cat.jpg" alt="Cat" style="
+          height: 200px;
+          width: 150px;
+          border-radius: 50%;
+          border: 5px solid whitesmoke;
+        margin:20px" />
+        <h1>Layout Design with Kitty</h1>
+    </header>
+    <aside>
+        <img src="images/kitty.jpg" alt="Kitty" />
+    </aside>
+    <article>
+        <h2>Form Design
+            <p>&#128512; &#128516; &#128525; &#128151;
+            </p>
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, vero. Veniam doloribus ipsa, quaerat id sunt saepe voluptate qui velit itaque odit, provident iste corrupti magni architecto officiis! Eligendi, optio. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Reiciendis sint, deserunt assumenda, earum officia, numquam facilis minus expedita ea quam vel deleniti est rem. Dignissimos ullam consequuntur dicta ratione explicabo.
+        </p>
+
+    </article>
+    <section>
+        <h1>HTML Forms</h1>
+        <form action="" class="form1">
+            <label for="">First name:<input type="text" name="letter" id="" class="letter">
+            </label><br>
+            <label for="">Password:<input type="password" name="pass" id="" class="pass"></label>
+            <input type="radio" name="math" id="">Maths
+            <input type="radio" name="physics" id="">Physics
+            <select name="
+            " id="">
+            <option value="">Maths</option>
+            <option value="">Physics</option>
+        </select>
+            <input type="file" name="fileupload" id="" accept="image/*">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <input type="button" value="OK">
+            <input type="image" src="images/background.jpg" alt="" style="width: 20px; height: 20px;">
+        </form>
+    </section>
+    <br>
+    <section class="second">
+        <h1>My feedback form</h1>
+        <form action="">
+            <ul>
+                <li>Name: <input type="text" name="tex" id=""></li>
+                <li>Email: <input type="email" name="mail" id=""></li>
+                <li>Password: <input type="password" name="pass1" id=""></li><br>
+                <li>Please check all the emotions that apply to you:
+                </li>
+                <ul>
+                    <li>Angry <input type="checkbox" name="angry" id=""></li>
+                    <li>Sad <input type="checkbox" name="sad" id=""></li>
+                    <li>Happy <input type="checkbox" name="happy" id=""></li>
+                    <li>Ambivalent <input type="checkbox" name="amb" id=""></li>
+                </ul>
+                <li>How satisfied were you with our service?</li>
+                <ul>
+                    <li>Very satisfied <input type="radio" name="very" id=""></li>
+                    <li>Satisfied <input type="radio" name="sadisfied" id=""></li>
+                    <li>Didn't care <input type="radio" name="not" id=""></li>
+                    <li>Dissatisfied <input type="radio" name="dis" id=""></li>
+                    <li>Very dissatisfied <input type="radio" name="veryDis" id=""></li>
+                </ul><br>
+                <li>Further comments: <textarea name="text" id="" cols="30" rows="3"></textarea></li><br>
+                <li>Bio photo: <input type="text" name="photo" id=""> <input type="file" name="uploadfile" id="" class="uploadfile"></li>
+                <li>
+                    Location visited: <select name="" id="">
+                        <option value="">Select location</option>
+                        <option value="">Myanmar</option>
+                        <option value="">Japanes</option>
+                        <option value="">UK</option>
+                    </select>
+                </li>
+                <li><input type="submit" value="Submit" class="submit"></li>
+            </ul>
+    </section>
+    <footer>
+        <h2>Kitty</h2>
+        <p>copyright @Kitty</p>
+
+        <a href="mailto:kitty@gmail.com">Email: Kitty@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>
